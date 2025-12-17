@@ -99,3 +99,13 @@ This project was developed as part of a **Machine Learning course project**, foc
 ---
 
 ## 🧱 Project Structure
+├── augmentation_pipeline.py # Dataset balancing & augmentation
+├── cnn_feature_extraction.py # ResNet50 feature extraction
+├── feature_extraction.py # Hand-crafted features (legacy)
+├── train_classifiers.py # Training & evaluation pipeline
+├── svm_classifier.py # SVM configuration
+├── knn_classifier.py # KNN configuration
+├── realtime_classifier.py # Webcam-based real-time inference
+├── test.py # Hidden dataset evaluation
+├── best_model.pkl # Saved best model + scaler
+└── README.md
