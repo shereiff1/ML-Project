@@ -1,5 +1,5 @@
 # 🧠 Material Stream Identification System
-**Computer Vision–Based Waste Classification using CNN Features and Classical Machine Learning**
+**Oject Classification using CNN Features and Classical Machine Learning**
 
 ## 📌 Overview
 The **Material Stream Identification System** is an end-to-end machine learning pipeline for classifying waste materials into six categories:
@@ -99,13 +99,14 @@ This project was developed as part of a **Machine Learning course project**, foc
 ---
 
 ## 🧱 Project Structure
-├── augmentation_pipeline.py # Dataset balancing & augmentation
-├── cnn_feature_extraction.py # ResNet50 feature extraction
-├── feature_extraction.py # Hand-crafted features (legacy)
-├── train_classifiers.py # Training & evaluation pipeline
-├── svm_classifier.py # SVM configuration
-├── knn_classifier.py # KNN configuration
-├── realtime_classifier.py # Webcam-based real-time inference
-├── test.py # Hidden dataset evaluation
-├── best_model.pkl # Saved best model + scaler
-└── README.md
+├── augmentation_pipeline.py      # Dataset balancing & augmentation (flip, rotation, brightness, noise)
+├── cnn_feature_extraction.py     # Feature extraction using pre-trained ResNet50 (ImageNet)
+├── feature_extraction.py         # Hand-crafted feature extraction (legacy/alternative)
+├── train_classifiers.py          # End-to-end training & evaluation pipeline
+├── svm_classifier.py             # SVM model configuration (RBF, C=10, gamma=scale)
+├── knn_classifier.py             # KNN model configuration (k=5, cosine distance)
+├── realtime_classifier.py        # Real-time webcam-based classification
+├── test.py                       # Evaluation script for hidden/test dataset
+├── best_model.pkl                # Saved best model, scaler, and configuration
+└── README.md                     # Project documentation
+
