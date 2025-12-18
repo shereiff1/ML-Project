@@ -119,6 +119,6 @@ This project was developed as part of a **Machine Learning course project**, foc
 │   └── Evaluation script for hidden/test dataset
 ├── best_model.pkl
 │   └── Saved best model, scaler, and configuration
-└── README.md
-    └── Project documentation
+└── ML-Report.pdf
+    └── Reporting results from analysis and learning 
 
