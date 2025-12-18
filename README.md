@@ -99,14 +99,26 @@ This project was developed as part of a **Machine Learning course project**, foc
 ---
 
 ## 🧱 Project Structure
-├── augmentation_pipeline.py      # Dataset balancing & augmentation (flip, rotation, brightness, noise)
-├── cnn_feature_extraction.py     # Feature extraction using pre-trained ResNet50 (ImageNet)
-├── feature_extraction.py         # Hand-crafted feature extraction (legacy/alternative)
-├── train_classifiers.py          # End-to-end training & evaluation pipeline
-├── svm_classifier.py             # SVM model configuration (RBF, C=10, gamma=scale)
-├── knn_classifier.py             # KNN model configuration (k=5, cosine distance)
-├── realtime_classifier.py        # Real-time webcam-based classification
-├── test.py                       # Evaluation script for hidden/test dataset
-├── best_model.pkl                # Saved best model, scaler, and configuration
-└── README.md                     # Project documentation
+
+```text
+├── augmentation_pipeline.py
+│   └── Dataset balancing & augmentation (flip, rotation, brightness, noise)
+├── cnn_feature_extraction.py
+│   └── Feature extraction using pre-trained ResNet50 (ImageNet)
+├── feature_extraction.py
+│   └── Hand-crafted feature extraction (legacy/alternative)
+├── train_classifiers.py
+│   └── End-to-end training & evaluation pipeline
+├── svm_classifier.py
+│   └── SVM model configuration (RBF, C=10, gamma=scale)
+├── knn_classifier.py
+│   └── KNN model configuration (k=5, cosine distance)
+├── realtime_classifier.py
+│   └── Real-time webcam-based classification
+├── test.py
+│   └── Evaluation script for hidden/test dataset
+├── best_model.pkl
+│   └── Saved best model, scaler, and configuration
+└── README.md
+    └── Project documentation
 
