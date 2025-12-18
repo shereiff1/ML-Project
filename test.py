@@ -36,7 +36,7 @@ def predict(dataFilePath, bestModelPath):
         except ImportError:
             print("Error: feature_extraction module not found.")
             return []
-    extensions = ['*.jpg', '*.jpeg', '*.png', '*.bmp']
+    extensions = ['*.jpg', '*.png']
     image_files = []
     for ext in extensions:
         image_files.extend(glob(os.path.join(dataFilePath, ext)))
